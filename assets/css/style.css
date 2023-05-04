@@ -1,29 +1,30 @@
+/* Universal styling for the whole styling sheet, box sizing alows to add padding and border to elements width and height */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* sets background color for all data in the body tags*/
 body {
     background-color: #d9dcd6;
 }
-
+/* signifies a class name, which will change the font to first availble font displayed*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* targets h1 header, display allows data to list vertically and height and width not effect the flow of the data */  
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* allows for us to apply same attributes to multiple classes */
 .header h1 .seo {
     color: #d9dcd6;
 }
-
+/* float allows for postioning in a container left or right in this case right alllowing text to wrap around it, padding and margins were also added*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,7 +32,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* states the list in the element have no bullet points */
 .header div ul {
     list-style-type: none;
 }
@@ -40,7 +41,7 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* states there will be no underline on text in this element */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -49,7 +50,7 @@ a {
 p {
     font-size: 16px;
 }
-
+/* allows for a a image to prorperly be sized as a background image in a postion that is visually pleasing*/
 .hero {
     height: 800px;
     width: 100%;
@@ -74,7 +75,7 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
+/* clear allows data to flow next to floated items*/ 
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,7 +86,7 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/* bottom margin sets margin at bottom of element */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -115,13 +116,13 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/* auto feature allows element to properly center element in its container */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* max width allows if content width is larger than max width teh height of the content will change*/
 .benefit-brand img {
     display: block;
     margin: 10px auto;
